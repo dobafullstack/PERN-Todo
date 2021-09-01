@@ -1,16 +1,6 @@
-import React, { useState, useEffect } from "react";
-import {
-    Input,
-    Button,
-    Modal,
-    ModalHeader,
-    ModalBody,
-    ModalFooter,
-    Form,
-    FormGroup,
-    Label,
-} from "reactstrap";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
+import { Button, Modal, ModalHeader, ModalFooter } from "reactstrap";
+import { useDispatch } from "react-redux";
 import { deleteTodo } from "../redux/actions/todo.action";
 
 export default function RemoveModal({ removeModal, setRemoveModal, itemId }) {
